@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Numbering Systems Converter</title>
+    <style>
+        body{
+            margin-top:70px;
+            background:#388087;
+            color:#f6f6f2;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!--want this to be narrow app so use grid system && center offset-->
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h1 class="text-center mb-4">Numbering System Converter</h1>
+                <form>
+                    <div class="form-group">
+                        <input id="decimalInput" type="number" class="form-control form-control-lg" placeholder="Enter decimal">
+                    </div>
+                </form>
+                <div id="output">
+                    <div class="card bg-dark mb-2">
+                        <div class="card-body">
+                            <h4>Decimal</h4>
+                            <div id="decimalOutput"></div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-dark mb-2">
+                        <div class="card-body">
+                            <h4>Binary</h4>
+                            <div id="binaryOutput"></div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-dark mb-2">
+                        <div class="card-body">
+                            <h4>Octal</h4>
+                            <div id="octalOutput"></div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-dark mb-2">
+                        <div class="card-body">
+                            <h4>Hexadecimal</h4>
+                            <div id="hexadecimalOutput"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        //document.getElementById('output').style.visibility = 'hidden';
+        document.getElementById('decimalInput').addEventListener('input',function(e){
+            //document.getElementById('output').style.visibility = 'visible';
+            let decimal = e.target.value; //targets decimal input
+            console.log(decimal); //console logs it
+
+            document.getElementById('decimalOutput').innerHTML = dec2dec(decimal);
+
+            function dec2dec(dec) {
+                return (dec >>> 0).toString();
+            }
+
+            document.getElementById('binaryOutput').innerHTML = dec2bin(decimal);
+
+            function dec2bin(dec) {
+                return (dec >>> 0).toString(2);
+            }
+
+            document.getElementById('octalOutput').innerHTML = dec2oct(decimal);
+
+            function dec2oct(dec) {
+                return (dec >>> 0).toString(8);
+            }
+
+            document.getElementById('hexadecimalOutput').innerHTML = dec2hex(decimal); //is lowercase
+
+            function dec2hex(dec) {
+                return (dec >>> 0).toString(16);
+            }
+
+            /* from different bases TO decimal
+            // decimal
+            document.getElementById('decimalOutput').innerHTML = decimal;
+
+            // binary
+            document.getElementById('binaryOutput').innerHTML = Number.parseInt(decimal,2);
+
+            // binary
+            document.getElementById('binaryOutput').innerHTML = Number.parseInt(decimal,8);
+
+            // binary
+            document.getElementById('binaryOutput').innerHTML = Number.parseInt(decimal,16);
+            */
+        });
+    </script>
+</body>
+</html>
