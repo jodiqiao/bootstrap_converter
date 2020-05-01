@@ -2,7 +2,7 @@
 
 ## Bootstrap Numbering Systems Converter
 
-This is a simple front-end project, implemented with Bootstrap 4 U, which is elegant and easy to use. It converts a decimal number input to binary, octal and hexadecimal.
+This is a simple front-end project, implemented with Bootstrap 4 UI, which is elegant and easy to use. It converts a decimal number input to binary, octal and hexadecimal.
 
 ### Project Status
 
