@@ -8,6 +8,12 @@ This is a simple front-end project, implemented with Bootstrap 4 U, which is ele
 
 This project is currently in development. Users can enter a decimal number and see converted values in the other numbering systems immediately. Functionality for more types of conversion, handling fractions and possibly the complement system calculations are in progress. A more visually appealing design is also being contemplated.
 
+### Project Problems
+
+- Currently only takes a 10-digit decimal, any larger than that it all becomes gibberish
+
+- Entering value then deleting it cause the converted value to show "0", would prefer to have nothing there when input is empty
+
 
 ### Project Screenshots
 
