@@ -21,7 +21,7 @@ This project is currently in development. Users can enter a decimal number and s
 
 ### Installation and Setup
 
-None.
+None. Visit [my blog post at jodiqiao.github.io](https://jodiqiao.github.io/2020/04/30/bootstrap-converter/) to launch it in the browser.
 
 ### Reflection
 
