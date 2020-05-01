@@ -17,7 +17,7 @@ This project is currently in development. Users can enter a decimal number and s
 
 ### Project Screenshots
 
-![project](images/bootstrap_converter.png)
+![project](images/bootstrap_converter.PNG)
 
 ### Installation and Setup
 
